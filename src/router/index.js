@@ -64,6 +64,12 @@ Vue.use(VueRouter)
     meta: { layout: 'main' },
     component: () => import('@/views/UpdateSong.vue'),
   },
+  {
+    path: '/AddSet',
+    name: 'addset',
+    meta: { layout: 'main' },
+    component: () => import('@/views/AddSet.vue'),
+  },
 ]
 
 const router = new VueRouter({
