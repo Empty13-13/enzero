@@ -23,7 +23,6 @@
           <li 
           v-for="(song,index) in songs" 
           :key="index" 
-          :id="index"
           >
             <div class="collapsible-header">
               <i class="material-icons orange" title="Воспроизвести">play_arrow</i>

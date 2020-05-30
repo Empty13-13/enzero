@@ -10,7 +10,7 @@
       <a href="#!" class="collection-item orange-text">Инжир</a>
     </ul>
     <button class="btn-floating green rounded">
-      <i class="material-icons" @click="replacePage('/addsong')">add</i>
+      <i class="material-icons" @click="replacePage('/addset')">add</i>
     </button>
   </div>
 </template>
