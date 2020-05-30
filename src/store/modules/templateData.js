@@ -8,7 +8,6 @@ export default {
     mutations: {
         setSelectedSongIndex(state,index){
             state.selectedSongIndex = index;
-            
         }
     },
 }
