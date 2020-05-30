@@ -5,7 +5,10 @@ export default{
         sets: {},
     },
     getters: {
-        sets: s => s.sets
+        sets: s => s.sets,
+        setSongs(state,key){
+            return state.sets
+        } 
     },
     actions:{
         async addSet({dispatch},songs){
@@ -23,7 +26,7 @@ export default{
         },
         async getSetsFromBD({commit}) {
             let sets = (await firebase.database().ref('/sets/').once('value')).val()
-
+            
             commit('updateSetsList', sets)
         },
     },
